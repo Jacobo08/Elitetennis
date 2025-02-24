@@ -9,29 +9,31 @@
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f4f4f4;
+            background-color: #e8f5e9;
         }
         header {
-            background-color: #333;
+            background-color: #2e7d32;
             color: white;
             text-align: center;
-            padding: 1em;
+            padding: 1.5em;
+            font-size: 24px;
         }
         nav {
             display: flex;
             justify-content: center;
-            background-color: #444;
-            padding: 10px;
+            background-color: #1b5e20;
+            padding: 15px;
         }
         nav a {
             color: white;
             text-decoration: none;
-            margin: 0 15px;
+            margin: 0 20px;
             font-size: 18px;
+            font-weight: bold;
         }
         section {
             padding: 20px;
-            max-width: 800px;
+            max-width: 1000px;
             margin: auto;
             background: white;
             margin-top: 20px;
@@ -39,18 +41,32 @@
             box-shadow: 0 0 10px rgba(0,0,0,0.1);
         }
         h2 {
-            color: #333;
+            color: #2e7d32;
         }
         .news {
-            background: #eee;
-            padding: 10px;
+            background: #c8e6c9;
+            padding: 15px;
             border-radius: 5px;
-            margin-bottom: 10px;
+            margin-bottom: 15px;
+        }
+        .products {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+        .product {
+            background: #f1f8e9;
+            padding: 15px;
+            margin: 10px;
+            width: 30%;
+            text-align: center;
+            border-radius: 5px;
+            box-shadow: 0 0 5px rgba(0,0,0,0.1);
         }
         footer {
             text-align: center;
-            padding: 10px;
-            background-color: #333;
+            padding: 15px;
+            background-color: #1b5e20;
             color: white;
             margin-top: 20px;
         }
@@ -58,20 +74,38 @@
 </head>
 <body>
     <header>
-        <h1>Elite Tennis</h1>
+        <h1>Elite Tennis - Tu tienda especializada en tenis</h1>
     </header>
     <nav>
         <a href="#inicio">Inicio</a>
+        <a href="#productos">Productos</a>
         <a href="#noticias">Noticias</a>
         <a href="#nosotros">Sobre Nosotros</a>
-        <a href="#mision">Misión</a>
-        <a href="#vision">Visión</a>
-        <a href="#objetivos">Objetivos</a>
+        <a href="#contacto">Contacto</a>
     </nav>
     
     <section id="inicio">
         <h2>Bienvenido a Elite Tennis</h2>
         <p>Encuentra todo lo que necesitas para mejorar tu juego: raquetas, encordados, pelotas, zapatillas y más.</p>
+        <img src="tenis_banner.jpg" alt="Imagen de tenis" width="100%">
+    </section>
+    
+    <section id="productos">
+        <h2>Nuestros Productos</h2>
+        <div class="products">
+            <div class="product">
+                <h3>Raquetas Profesionales</h3>
+                <p>Las mejores marcas y modelos para todos los niveles.</p>
+            </div>
+            <div class="product">
+                <h3>Encordados Personalizados</h3>
+                <p>Servicio de encordado profesional para mejorar tu rendimiento.</p>
+            </div>
+            <div class="product">
+                <h3>Zapatillas Especializadas</h3>
+                <p>Comodidad y agarre superior para cada tipo de superficie.</p>
+            </div>
+        </div>
     </section>
     
     <section id="noticias">
@@ -91,23 +125,11 @@
         <p>Desde pequeño, el tenis ha sido mi pasión. Decidí crear Elite Tennis para ofrecer productos de calidad a jugadores de todos los niveles.</p>
     </section>
     
-    <section id="mision">
-        <h2>Misión</h2>
-        <p>Proporcionar a los jugadores de tenis el mejor equipamiento y servicio especializado para mejorar su rendimiento.</p>
-    </section>
-    
-    <section id="vision">
-        <h2>Visión</h2>
-        <p>Convertirme en la tienda líder en productos y servicios de tenis, expandiéndome a nivel nacional.</p>
-    </section>
-    
-    <section id="objetivos">
-        <h2>Objetivos</h2>
-        <ul>
-            <li>Ofrecer un catálogo completo de productos de tenis.</li>
-            <li>Brindar asesoría especializada a cada cliente.</li>
-            <li>Implementar un servicio de encordado profesional.</li>
-        </ul>
+    <section id="contacto">
+        <h2>Contacto</h2>
+        <p>📍 Dirección: Av las americas, Pereira</p>
+        <p>📞 Teléfono: 555-123-444</p>
+        <p>📧 Correo: jacobopava@gmail.com</p>
     </section>
     
     <footer>
